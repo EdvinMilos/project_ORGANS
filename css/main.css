@@ -1,0 +1,278 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+@font-face{
+    font-family: 'aku';
+      src: url('../fonts/Aku&Kamu.otf'); 
+}
+@font-face {
+    font-family: 'gothamBold';
+      src: url('../fonts/Gotham-Bold.otf'); 
+}
+@font-face {
+    font-family: 'gothamThin';
+    src: url('../fonts/Gotham-Thin.otf'); 
+}
+@font-face {
+    font-family: 'gothamBlack';
+    src: url('../fonts/Gotham-Black.otf'); 
+}
+/* --------------------------------- */
+
+/* ---------------ON-SCREEN NAVIGATION------------------ */
+#up1{
+    position: absolute;
+    width: 100vw;
+    height: 50vh;
+    z-index: 4;
+    cursor: pointer;
+    display: none;
+}
+#up2{
+    position: absolute;
+    width: 100vw;
+    height: 50vh;
+    z-index: 4;
+    cursor: pointer;
+    display: none;
+}
+#up3{
+    position: absolute;
+    width: 100vw;
+    height: 50vh;
+    z-index: 4;
+    cursor: pointer;
+    display: none;
+}
+#down1{
+    position: absolute;
+    width: 100vw;
+    height: 50vh;
+    top: 50vh;
+    z-index: 4;
+    cursor: pointer;
+}
+#down2{
+    position: absolute;
+    width: 100vw;
+    height: 50vh;
+    top: 50vh;
+    z-index: 4;
+    cursor: pointer;
+    display: none;
+}
+#down3{
+    position: absolute;
+    width: 100vw;
+    height: 50vh;
+    top: 50vh;
+    z-index: 4;
+    cursor: pointer;
+    display: none;
+}
+.pointer{
+    pointer-events: auto !important;
+}
+/* ---------------ON-SCREEN NAVIGATION------------------ */
+
+
+/* ----------------ANIMATION----------------- */
+@keyframes contShow {
+    0% {
+      opacity:0;
+    }
+    10% {
+        opacity:0;
+        width: 100%;
+    }
+    30%{
+        opacity: 0;
+    }
+    100% {
+        width: 100%;
+        opacity:1;
+    }
+}
+@keyframes contHide {
+    0% {
+      width: 100%;
+      opacity:1;
+    }
+    90%{
+        width: 100%;
+        opacity: 0;
+    }
+    100% {
+        width: 0%;
+        opacity:0;
+    }
+}
+/* ----------------ANIMATION----------------- */
+
+
+/* ----------------TRANSITION ASSETS----------------- */
+#morph1{
+    width: 100%;
+    height: 100%;
+    top: 0%;
+    left: 0;
+    position: absolute;
+    pointer-events: none;
+    z-index: 3;
+}
+#morph2{
+    width: 100%;
+    height: 100%;
+    top: 0%;
+    left: 0;
+    position: absolute;
+    pointer-events: none;
+    z-index: 2;
+    display: none;
+}
+#morph3{
+    width: 100%;
+    height: 100%;
+    top: 0%;
+    left: 0;
+    position: absolute;
+    pointer-events: none;
+    z-index: 1;
+    display: none;
+}
+/* ----------------TRANSITION ASSETS----------------- */
+
+
+/* ----------------HEADER----------------- */
+header{
+    position: absolute;
+    z-index: 5;
+    top: 10vh;
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+}
+#logo, #menu{
+    margin: 0 5vw;
+    width: 50px;
+    height: 50px;
+}
+/* ----------------HEADER----------------- */
+
+
+/* ----------------REGISTRATION BUTTON----------------- */
+#reg{
+    position: absolute;
+    z-index: 5;
+    top: 82vh;
+    left: 90vw;
+    background: rgba(0, 0, 0, 0.164);
+    padding: 20px;
+    clip-path: circle(48% at 50% 50%);
+}
+#reg:hover{
+    background: rgb(194, 0, 0);
+}
+#reg img{
+    margin-bottom: -5px;
+    margin-right: -3px;
+    width: 40px;
+}
+/* ----------------REGISTRATION BUTTON----------------- */
+
+
+/* ----------------CONTENT----------------- */
+#content1{
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 30% 20% 50%;
+    color: rgb(255, 255, 255);
+}
+#content2{
+    height: 100vh;
+    width: 100vw;
+    color: rgb(155, 26, 21);
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 30% 20% 50%;
+
+}
+#content3{
+    height: 100vh;
+    width: 100vw;
+    color: rgb(170, 232, 236);
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 30% 20% 50%;
+}
+#content4{
+    height: 100vh;
+    width: 100vw;
+    color: rgb(161, 0, 0);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+p{
+    padding-top: 100px;
+    grid-area: 3/2/4/3;
+    cursor: default;
+    font-size: 20pt;
+    font-family: 'gothamBold';
+}
+#content1 h1{
+    font-size: 120pt;
+    margin-left: 90px;
+    margin-top: -80px;
+}
+h1{
+    grid-area: 2/1/3/3;
+    cursor: default;
+    font-size: 100pt;
+    font-family: 'gothamBlack';
+}
+.subHead{
+    margin-top: -80px;
+    margin-left: 90px;
+    grid-area: 3/1/4/2;
+    cursor: default;
+    font-size: 25pt;
+    font-family: 'gothamThin';
+}
+.highlight{
+    color: #CED7D5;
+}
+#first{
+    position: absolute;
+    z-index: 3;
+}
+#second{
+    position: absolute;
+    z-index: 2;
+    display: none;
+}
+#third{
+    position: absolute;
+    z-index: 1;
+    display: none;
+}
+#fourth{
+    position: absolute;
+    z-index: 0;
+    display: none;
+}
+.displayShowAnime{
+    animation: contShow 1s ease-in-out 0s 1 normal forwards;
+    display: block !important;
+}
+.displayShow{
+    display: block !important;
+    opacity: 1 !important;
+}
+.displayHide{
+    animation: contHide 1s ease-in-out 0s 1 normal forwards;
+}
+/* ----------------CONTENT----------------- */
